@@ -1,6 +1,5 @@
 const BusinessStats = (props) => {
 
-    console.log(props)
     return (
         <div>
             <div>Growing Difficulty: {props.data.difficulty}</div>
