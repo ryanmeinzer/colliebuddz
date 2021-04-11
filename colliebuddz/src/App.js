@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 import {makeStyles} from '@material-ui/core/styles'
 import React, {useState} from 'react'
+import Container from '@material-ui/core/Container'
 
 const data = [
   {
@@ -75,20 +76,21 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const [state, setState] = useState(0)
   const classes = useStyles()
-  console.log(state)
   return (
-      <>
+    <>
       <div className={classes.root}>
         <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-          <Button onClick={() => setState(0)}>One</Button>
-          <Button onClick={() => setState(1)}>Two</Button>
-          <Button onClick={() => setState(2)}>Three</Button>
+          <Button onClick={() => setState(0)}>Blue Dream</Button>
+          <Button onClick={() => setState(1)}>Sour Diesel</Button>
+          <Button onClick={() => setState(2)}>Granddaddy Purple</Button>
         </ButtonGroup>
-      </div>      
-      < Summary data={data[state].summary} />
-      < BusinessStats data={data[state].businessStats} />
-      < ConsumerStats data={data[state].consumerStats} />
-      </>
+      </div>
+      <Container align='center'>
+        < Summary data={data[state].summary} />
+        < BusinessStats data={data[state].businessStats} />
+        < ConsumerStats data={data[state].consumerStats} />
+      </Container>
+    </>
     )
 }
 

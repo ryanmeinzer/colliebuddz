@@ -10,7 +10,7 @@ const FireButton = () => {
     const Pause = ({stop}) => {
         return (
             <IconButton onClick={() => stop()} aria-label="fire" style={{color: 'red'}} >
-                <WhatshotIcon />
+                <WhatshotIcon style={{fontSize: '2.5rem'}}/>
             </IconButton>
         )
     }
@@ -18,7 +18,7 @@ const FireButton = () => {
     const Play = ({play}) => {
         return (
             <IconButton onClick={() => play()} aria-label="fire" >
-                <WhatshotIcon style={{color: 'disabled'}} />
+                <WhatshotIcon style={{color: 'disabled', fontSize: '2.5rem'}} />
             </IconButton>
         )
     }
