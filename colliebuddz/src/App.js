@@ -10,9 +10,26 @@ import React, {useState} from 'react'
 const data = [
   {
     summary: {
+      name: 'Blue Dream',
+      image: 'https://images.leafly.com/flower-images/blue-dream.png?auto=compress,format&w=343&dpr=2',
+      description: 'This top-searched, best-selling strain has owned the charts for over a decade & is loved by all types of cannabis consumers.'
+    },
+    businessStats: {
+      difficulty: 'Moderate',
+      yield: '3-6 (Oz/Ft)²',
+      flowering: '10-12 Weeks'
+    },
+    consumerStats: {
+      happy: 57,
+      euphoric: 52,
+      relaxed: 48
+    }
+  },
+  {
+    summary: {
       name: 'Sour Diesel',
-    image: 'https://images.leafly.com/flower-images/sour-diesel.jpg?auto=compress,format&w=440&dpr=2',
-    description: 'Sour Diesel has defined East Coast high-THC cannabis since the 1990s and has decades-long popularity among elite consumers.'
+      image: 'https://images.leafly.com/flower-images/sour-diesel.jpg?auto=compress,format&w=343&dpr=2',
+      description: 'This strain has defined East Coast high-THC cannabis since the 1990s and has decades-long popularity among elite consumers.'
     },
     businessStats: {
       difficulty: 'Moderate',
@@ -27,36 +44,19 @@ const data = [
   },
   {
     summary: {
-      name: 'Sour Diesel',
-      image: 'https://images.leafly.com/flower-images/sour-diesel.jpg?auto=compress,format&w=440&dpr=2',
-      description: 'Sour Diesel has defined East Coast high-THC cannabis since the 1990s and has decades-long popularity among elite consumers.'
+      name: 'Granddaddy Purple',
+      image: 'https://images.leafly.com/flower-images/granddaddy-purple.png?auto=compress,format&w=343&dpr=2',
+      description: 'GDP enjoys solid consumer demand and is the matriarch of The Purps strain family, easily making it a Leafly legend of 420.'
     },
     businessStats: {
-      difficulty: 'Moderate',
-      yield: '1-3 (Oz/Ft)²',
-      flowering: '10-12 Weeks'
+      difficulty: 'Easy',
+      yield: '3-6 (Oz/Ft)²',
+      flowering: '7-9 Weeks'
     },
     consumerStats: {
-      happy: 57,
-      uplifted: 50,
-      euphoric: 49
-    }
-  },
-  {
-    summary: {
-      name: 'Sour Diesel',
-      image: 'https://images.leafly.com/flower-images/sour-diesel.jpg?auto=compress,format&w=440&dpr=2',
-      description: 'Sour Diesel has defined East Coast high-THC cannabis since the 1990s and has decades-long popularity among elite consumers.'
-    },
-    businessStats: {
-      difficulty: 'Moderate',
-      yield: '1-3 (Oz/Ft)²',
-      flowering: '10-12 Weeks'
-    },
-    consumerStats: {
-      happy: 57,
-      uplifted: 50,
-      euphoric: 49
+      relaxed: 56,
+      sleepy: 46,
+      happy: 44
     }
   }
 ]
