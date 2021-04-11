@@ -2,7 +2,11 @@ const Summary = (props) => {
 
     console.log(props)
     return (
-        <div>Hi again {props.data.name}</div>
+        <>
+            <div>{props.data.name}</div>
+            <div>{props.data.image}</div>
+            <div>{props.data.description}</div>
+        </>
     )
 }
 

@@ -26,6 +26,12 @@ Collie Buddz song track selector / filter
 
 see /mockup.png
 
+## Step 2: Build A Static Version in React
+
+* render data model with UI without interactivity (state)
+* parents pass props to children
+* top component accepts data model as prop
+
 Summary
 	name
 	image
@@ -40,12 +46,6 @@ ConsumerStats
 	first % bar chart
 	second % in bar chart
 	third % in bar chart
-
-## Step 2: Build A Static Version in React
-
-* render data model with UI without interactivity (state)
-* parents pass props to children
-* top component accepts data model as prop
 
 ## Step 3: Identify The Minimal (but complete) Representation Of UI State
 
