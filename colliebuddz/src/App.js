@@ -2,7 +2,6 @@ import './App.css'
 import Summary from './Summary.js'
 import BusinessStats from './BusinessStats.js'
 import ConsumerStats from './ConsumerStats.js'
-import FireButton from './FireButton.js'
 
 const data = {
     summary: {
