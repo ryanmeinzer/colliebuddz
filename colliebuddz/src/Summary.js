@@ -2,7 +2,6 @@ import FireButton from './FireButton'
 
 const Summary = (props) => {
 
-    console.log(props)
     return (
         <>
             < FireButton />
