@@ -10,14 +10,14 @@ const data = {
     description: 'Sour Diesel has defined East Coast high-THC cannabis since the 1990s and has decades- long popularity among elite consumers.'
     },
     businessStats: {
-      difficulty: 'hard',
-      yield: 'x',
-      flowering: '3'
+      difficulty: 'Moderate',
+      yield: '1-3 (Oz/Ft)²',
+      flowering: '10-12 Weeks'
     },
     consumerStats: {
-      first: 34,
-      second: 63,
-      third: 78
+      happy: 57,
+      uplifted: 50,
+      euphoric: 49
     }
 }
 
