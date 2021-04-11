@@ -58,7 +58,6 @@ ConsumerStats
 
 toggle fire on or off
 
-
 ## Step 4: Identify Where Your State Should Live
 
 * determine which component(s) should own state
@@ -69,9 +68,13 @@ toggle fire on or off
               * or another component higher
                   * or even a new component
 
+just in reusable FireButton component
+
 ## Step 5: Add Inverse Data Flow
 
 * components should only update their own state
 * parents pass callbacks to children to update parent’s state
+
+unnecessary (for MVP)
 
 ---
