@@ -24,9 +24,9 @@ const FireButton = () => {
     }
 
     return (
-        <>
+        <div>
             {isPlaying ? <Pause stop={stop} /> : <Play play={play} />}
-        </>
+        </div>
     )
 }
 

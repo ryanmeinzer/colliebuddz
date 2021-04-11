@@ -4,9 +4,9 @@ const Summary = (props) => {
 
     return (
         <>
-            < FireButton />
             <div>{props.data.name}</div>
-            <div>{props.data.image}</div>
+            <img alt={props.data.name} src={props.data.image} width='150px' ></img>
+            < FireButton />
             <div>{props.data.description}</div>
         </>
     )
