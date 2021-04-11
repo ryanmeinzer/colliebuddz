@@ -56,17 +56,8 @@ ConsumerStats
   * never changed? not state
   * computable from other props or state? not state
 
-state
-	name
-	image
-	description
-	difficulty
-	yield
-	flowering
-	effects
-		first
-		second
-		third
+toggle fire on or off
+
 
 ## Step 4: Identify Where Your State Should Live
 
