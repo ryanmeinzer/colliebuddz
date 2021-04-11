@@ -46,7 +46,7 @@ const Summary = (props) => {
 
     return (
         <>
-            <Card className={classes.root}>
+            <Card className={classes.root} style={{margin: '10px'}}>
                 < FireButton />
                 <CardActionArea>
                     <CardMedia
@@ -93,7 +93,6 @@ const Summary = (props) => {
                     </Button>
                 </CardActions>
             </Card>
-            <img alt={props.data.name} src={props.data.image} width='150px' ></img>
         </>
     )
 }
