@@ -1,7 +1,6 @@
 import IconButton from '@material-ui/core/IconButton';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import useSound from 'use-sound';
-import React, {useEffect} from 'react'
 
 const FireButton = (props) => {
 

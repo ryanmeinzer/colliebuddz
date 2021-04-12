@@ -7,7 +7,6 @@ import ButtonGroup from '@material-ui/core/ButtonGroup'
 import {makeStyles} from '@material-ui/core/styles'
 import React, {useState, useEffect} from 'react'
 import Container from '@material-ui/core/Container'
-import {data} from './data.js'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,16 +20,46 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App() {
-  // const [dataState, setDataState] = useState([])
+  const dataInitialState = {
+    summary: {
+      name: '',
+      image: '',
+      description: ''
+    },
+    businessStats: {
+      difficulty: '',
+      yield: '',
+      flowering: ''
+    },
+    consumerStats: [
+      {
+        name: '',
+        value: ''
+      },
+      {
+        name: '',
+        value: ''
+      },
+      {
+        name: '',
+        value: ''
+      }
+    ],
+    sound: ''
+  }
+  
+  const [data, setData] = useState([dataInitialState])
 
-  // useEffect(() => {
-  //   fetch('/data.js')
-  //     .then(response => setDataState(response.data)
-  //     )
-  // }, [])
+  useEffect(() => {
+    fetch('./data.json')
+      .then(response => response.json())
+      .then(json => setData(json.data)
+      )
+  }, [])
 
   const [state, setState] = useState(0)
   const classes = useStyles()
+
   return (
     <>
       <div className={classes.root}>
