@@ -7,6 +7,9 @@ import ButtonGroup from '@material-ui/core/ButtonGroup'
 import {makeStyles} from '@material-ui/core/styles'
 import React, {useState, useEffect} from 'react'
 import Container from '@material-ui/core/Container'
+import ComeAround from './sounds/ComeAround.m4a'
+import BlindToYou from './sounds/BlindToYou.m4a'
+import LetMeKnow from './sounds/LetMeKnow.m4a'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,6 +62,7 @@ function App() {
 
   const [state, setState] = useState(0)
   const classes = useStyles()
+  const sounds = [ComeAround, BlindToYou, LetMeKnow]
 
   return (
     <>
@@ -70,7 +74,7 @@ function App() {
         </ButtonGroup>
       </div>
       <Container align='center'>
-        < Summary data={data[state].summary} sound={data[state].sound}/>
+        < Summary data={data[state].summary} sound={sounds[state]}/>
         < BusinessStats data={data[state].businessStats} />
         < ConsumerStats data={data[state].consumerStats} />
       </Container>
