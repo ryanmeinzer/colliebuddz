@@ -47,7 +47,7 @@ const Summary = (props) => {
     return (
         <>
             <Card className={classes.root} style={{margin: '10px'}}>
-                < FireButton />
+                < FireButton sound={props.sound}/>
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}

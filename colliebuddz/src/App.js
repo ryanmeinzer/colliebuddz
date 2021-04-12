@@ -7,6 +7,9 @@ import ButtonGroup from '@material-ui/core/ButtonGroup'
 import {makeStyles} from '@material-ui/core/styles'
 import React, {useState} from 'react'
 import Container from '@material-ui/core/Container'
+import ComeAround from './sounds/ComeAround.m4a'
+import BlindToYou from './sounds/BlindToYou.m4a'
+import LetMeKnow from './sounds/LetMeKnow.m4a'
 
 const data = [
   {
@@ -33,7 +36,8 @@ const data = [
         name: 'Relaxed',
         value: 48
       }
-    ]
+    ],
+    sound: ComeAround
   },
   {
     summary: {
@@ -59,7 +63,8 @@ const data = [
         name: 'Euphoric',
         value: 49
       }
-    ]
+    ],
+    sound: BlindToYou
   },
   {
     summary: {
@@ -85,7 +90,8 @@ const data = [
         name: 'Happy',
         value: 44
       }
-    ]
+    ],
+    sound: LetMeKnow
   }
 ]
 
@@ -113,7 +119,7 @@ function App() {
         </ButtonGroup>
       </div>
       <Container align='center'>
-        < Summary data={data[state].summary} />
+        < Summary data={data[state].summary} sound={data[state].sound}/>
         < BusinessStats data={data[state].businessStats} />
         < ConsumerStats data={data[state].consumerStats} />
       </Container>
