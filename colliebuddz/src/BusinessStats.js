@@ -29,7 +29,7 @@ const BusinessStats = (props) => {
 
     return (
         <>
-            <Card className={classes.root} style={{margin: '10px'}}>
+            <Card className={classes.root} style={{margin: '20px'}}>
                 <CardContent>
                     <Typography variant="h5" component="h2">
                         Business Stats

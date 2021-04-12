@@ -20,11 +20,20 @@ const data = [
       yield: '3-6 (Oz/Ft)²',
       flowering: '10-12 Weeks'
     },
-    consumerStats: {
-      happy: 57,
-      euphoric: 52,
-      relaxed: 48
-    }
+    consumerStats: [
+      {
+        name: 'Happy',
+        value: 57
+      },
+      {
+        name: 'Euphoric',
+        value: 52
+      },
+      {
+        name: 'Relaxed',
+        value: 48
+      }
+    ]
   },
   {
     summary: {
@@ -37,11 +46,20 @@ const data = [
       yield: '1-3 (Oz/Ft)²',
       flowering: '10-12 Weeks'
     },
-    consumerStats: {
-      happy: 57,
-      uplifted: 50,
-      euphoric: 49
-    }
+    consumerStats: [
+      {
+        name: 'Happy',
+        value: 57
+      },
+      {
+        name: 'Uplifted',
+        value: 50
+      },
+      {
+        name: 'Euphoric',
+        value: 49
+      }
+    ]
   },
   {
     summary: {
@@ -54,11 +72,20 @@ const data = [
       yield: '3-6 (Oz/Ft)²',
       flowering: '7-9 Weeks'
     },
-    consumerStats: {
-      relaxed: 56,
-      sleepy: 46,
-      happy: 44
-    }
+    consumerStats: [
+      {
+        name: 'Relaxed',
+        value: 56
+      },
+      {
+        name: 'Sleepy',
+        value: 46,
+      },
+      {
+        name: 'Happy',
+        value: 44
+      }
+    ]
   }
 ]
 

@@ -1,5 +1,6 @@
 import Card from '@material-ui/core/Card'
 import {makeStyles} from '@material-ui/core/styles';
+import {BarChart, Bar, XAxis } from 'recharts';
 
 const useStyles = makeStyles({
     root: {
@@ -13,12 +14,11 @@ const useStyles = makeStyles({
 const ConsumerStats = (props) => {
     const classes = useStyles()
     return (
-        <Card className={classes.root} style={{margin: '10px'}}>
-            <div>
-            <div>{Object.keys(props.data)[0][0].toUpperCase() + Object.keys(props.data)[0].substring(1)}: {Object.values(props.data)[0]}</div>
-            <div>{Object.keys(props.data)[1][0].toUpperCase() + Object.keys(props.data)[1].substring(1)}: {Object.values(props.data)[1]}</div>
-            <div>{Object.keys(props.data)[2][0].toUpperCase() + Object.keys(props.data)[2].substring(1)}: {Object.values(props.data)[2]}</div>
-            </div>
+        <Card className={classes.root} style={{margin: '20px'}}>
+            <BarChart width={275} height={200} data={props.data} style={{margin: '20px'}}>
+                <Bar dataKey="value" fill="green" />
+                <XAxis dataKey="name" />
+            </BarChart>
         </Card>
     )
 }
