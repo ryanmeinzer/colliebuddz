@@ -29,27 +29,27 @@
         },
         {
             "summary": {
-                "name": "Sour Diesel",
-                "image": "https://images.leafly.com/flower-images/sour-diesel.jpg?auto=compress,format&w=343&dpr=2",
-                "description": "This strain has defined East Coast high-THC cannabis since the 1990s and has decades-long popularity among elite consumers."
+                "name": "God's Gift",
+                "image": "https://images.leafly.com/flower-images/og-kush.png?auto=compress,format&w=343&dpr=2",
+                "description": "No matter what your belief system, this strain is a 'gift' with its dreamy, blissful effects."
             },
             "businessStats": {
-                "difficulty": "Moderate",
-                "yield": "1-3 (Oz/Ft)²",
-                "flowering": "10-12 Weeks"
+                "difficulty": "Easy",
+                "yield": "3-6 (Oz/Ft)²",
+                "flowering": "7-9 Weeks"
             },
             "consumerStats": [
                 {
-                    "name": "Happy",
-                    "value": 57
+                    "name": "Relaxed",
+                    "value": 62
                 },
                 {
-                    "name": "Uplifted",
-                    "value": 50
+                    "name": "Happy",
+                    "value": 51
                 },
                 {
                     "name": "Euphoric",
-                    "value": 49
+                    "value": 44
                 }
             ],
             "sound": "./sounds/BlindToYou.m4a"

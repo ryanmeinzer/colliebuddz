@@ -69,7 +69,7 @@ function App() {
       <div className={classes.root}>
         <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
           <Button onClick={() => setState(0)}>Blue Dream</Button>
-          <Button onClick={() => setState(1)}>Sour Diesel</Button>
+          <Button onClick={() => setState(1)}>God's Gift</Button>
           <Button onClick={() => setState(2)}>Granddaddy Purple</Button>
         </ButtonGroup>
       </div>

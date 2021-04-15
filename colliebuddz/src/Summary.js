@@ -41,7 +41,7 @@ const Summary = (props) => {
     }
 
     const handleLearnMoreClick = () => {
-        window.open(`https://www.leafly.com/strains/${props.data.name.replace(' ', '-').toLowerCase()}`, "_blank")
+        window.open(`https://www.leafly.com/strains/${props.data.name.replace(' ', '-').replace("'", "").toLowerCase()}`, "_blank")
     }
 
     return (
