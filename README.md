@@ -1,16 +1,16 @@
 # Collie Buddz
 
-Business and Consumer Stats on Top Blazing Strains.
+Learn about the top blazing strains with Business & Consumer Stats.
 
 ## Use
 
 Go to https://colliebuddz.netlify.app/ It's mobile-friendly!
 
-Frontend Code Repository - https://github.com/ryanmeinzer/colliebuddz/tree/main/colliebuddz
+Frontend Code Repository - https://github.com/ryanmeinzer/colliebuddz
 
 ## Features
 
-Click around for information, hit the blaze icon to hear a matching track (only on Desktop).
+Hit the blaze button to get atuned to the respective strain. 
 
 ## Build Log
 
