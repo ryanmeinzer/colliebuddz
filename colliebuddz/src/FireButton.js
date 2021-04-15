@@ -1,6 +1,6 @@
-import IconButton from '@material-ui/core/IconButton';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import useSound from 'use-sound';
+import Button from "@material-ui/core/Button";
 
 const FireButton = (props) => {
 
@@ -8,17 +8,17 @@ const FireButton = (props) => {
 
     const Pause = ({stop}) => {
         return (
-            <IconButton onClick={() => stop()} aria-label="fire" style={{color: 'red'}} >
+            <Button onClick={() => stop()} aria-label="fire" variant="contained" style={{color: 'red', borderRadius: '50%', height: '4rem', width: '4rem', margin: '1rem'}} >
                 <WhatshotIcon style={{fontSize: '2.5rem'}} />
-            </IconButton>
+            </Button>
         )
     }
 
     const Play = ({play}) => {
         return (
-            <IconButton onClick={() => play()} aria-label="fire" >
-                <WhatshotIcon style={{color: 'disabled', fontSize: '2.5rem'}} />
-            </IconButton>
+            <Button onClick={() => play()} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
+                <WhatshotIcon style={{fontSize: '2.5rem'}} />
+            </Button>
         )
     }
 

@@ -18,4 +18,4 @@ https://github.com/ryanmeinzer/colliebuddz/blob/main/colliebuddz/process.md
 
 ## Screenshot
 
-![Collie Buddz Screenshot](/colliebuddz-screenshot.png)
+![Collie Buddz Screenshot](https://github.com/ryanmeinzer/colliebuddz/blob/main/colliebuddz/colliebuddz-screenshot.png)
