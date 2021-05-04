@@ -14,7 +14,7 @@ Hit the blaze button to get atuned to the respective strain.
 
 ## Build Log
 
-https://github.com/ryanmeinzer/colliebuddz/blob/main/colliebuddz/process.md
+https://github.com/ryanmeinzer/colliebuddz/blob/main/process.md
 
 ## Screenshot
 
