@@ -41,8 +41,11 @@ For fast and efficient content rendering with advanced reconciliation through Re
 ## Libraries & Packages
 
 [Material UI (responsiveness & CSS)](https://material-ui.com/)
+
 [Recharts (visuals)](https://recharts.org/en-US/)
+
 [useSound (audio)](https://www.npmjs.com/package/use-sound)
+
 [Mock JSON API (data)](https://github.com/ryanmeinzer/colliebuddz/blob/main/public/data.json)
 
 ## Screenshot
