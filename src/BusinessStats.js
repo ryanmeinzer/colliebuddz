@@ -34,13 +34,13 @@ const BusinessStats = (props) => {
                     </Typography>
                     <br></br>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Growing Difficulty: {props.data.difficulty}
+                        Growing Difficulty: {props.data?.difficulty}
                     </Typography>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Yield: {props.data.yield}
+                        Yield: {props.data?.yield}
                     </Typography>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Flowering: {props.data.flowering}
+                        Flowering: {props.data?.flowering}
                     </Typography>
                 </CardContent>
             </Card>

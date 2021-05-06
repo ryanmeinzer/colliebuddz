@@ -23,35 +23,8 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App() {
-  const dataInitialState = {
-    summary: {
-      name: '',
-      image: '',
-      description: ''
-    },
-    businessStats: {
-      difficulty: '',
-      yield: '',
-      flowering: ''
-    },
-    consumerStats: [
-      {
-        name: '',
-        value: ''
-      },
-      {
-        name: '',
-        value: ''
-      },
-      {
-        name: '',
-        value: ''
-      }
-    ],
-    sound: ''
-  }
   
-  const [data, setData] = useState([dataInitialState])
+  const [data, setData] = useState([])
 
   useEffect(() => {
     fetch('./data.json')
@@ -74,9 +47,9 @@ function App() {
         </ButtonGroup>
       </div>
       <Container align='center'>
-        < Summary data={data[state].summary} sound={sounds[state]}/>
-        < BusinessStats data={data[state].businessStats} />
-        < ConsumerStats data={data[state].consumerStats} />
+        < Summary data={data[state]?.summary} sound={sounds[state]}/>
+        < BusinessStats data={data[state]?.businessStats} />
+        < ConsumerStats data={data[state]?.consumerStats} />
       </Container>
     </>
     )

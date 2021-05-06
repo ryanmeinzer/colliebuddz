@@ -51,16 +51,16 @@ const Summary = (props) => {
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
-                        image={`${props.data.image}`}
+                        image={`${props.data?.image}`}
                         title="Contemplative Reptile"
                         style={{width: '150px'}}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            {props.data.name}
+                            {props.data?.name}
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            {props.data.description}
+                            {props.data?.description}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
