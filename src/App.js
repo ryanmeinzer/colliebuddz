@@ -42,7 +42,7 @@ function App() {
       <div className={classes.root}>
         <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
           {data.map((strain, index) =>
-            <Button onClick={() => setState(index)}>{strain.summary.name}</Button>
+            <Button key={`${strain}-${index}`} onClick={() => setState(index)}>{strain.summary.name}</Button>
           )}
         </ButtonGroup>
       </div>
