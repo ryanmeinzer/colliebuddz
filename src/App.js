@@ -27,7 +27,7 @@ function App() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch('./data.json')
+    fetch('https://my-json-server.typicode.com/ryanmeinzer/colliebuddz/db')
       .then(response => response.json())
       .then(json => setData(json.data)
       )
