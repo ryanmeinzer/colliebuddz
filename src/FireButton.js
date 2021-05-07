@@ -1,10 +1,15 @@
-import WhatshotIcon from '@material-ui/icons/Whatshot';
+import WhatshotIcon from '@material-ui/icons/Whatshot'
 import useSound from 'use-sound';
-import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button"
+import React, {useEffect} from 'react'
 
 const FireButton = (props) => {
 
     const [play, {stop, isPlaying}] = useSound(props.sound)
+
+    useEffect(() => {
+        stop()
+    }, [props.state, stop])
 
     const Pause = ({stop}) => {
         return (
