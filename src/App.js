@@ -25,34 +25,39 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   
   const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)  
 
   useEffect(() => {
     fetch('https://my-json-server.typicode.com/ryanmeinzer/colliebuddz/db')
       .then(response => response.json())
-      .then(json => setData(json.data)
-      )
+      .then(json => setData(json.data))
+      .finally(setIsLoading(false))
   }, [])
 
   const [state, setState] = useState(0)
   const classes = useStyles()
   const sounds = [ComeAround, BlindToYou, LetMeKnow]
 
-  return (
-    <>
-      <div className={classes.root}>
-        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-          {data.map((strain, index) =>
-            <Button key={`${strain}-${index}`} onClick={() => setState(index)}>{strain.summary.name}</Button>
-          )}
-        </ButtonGroup>
-      </div>
-      <Container align='center'>
-        < Summary data={data[state]?.summary} sound={sounds[state]}/>
-        < BusinessStats data={data[state]?.businessStats} />
-        < ConsumerStats data={data[state]?.consumerStats} />
-      </Container>
-    </>
+  if (!isLoading) {
+    return (
+      <>
+        <div className={classes.root}>
+          <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+            {data.map((strain, index) =>
+              <Button key={`${strain}-${index}`} onClick={() => setState(index)}>{strain.summary.name}</Button>
+            )}
+          </ButtonGroup>
+        </div>
+        <Container align='center'>
+          < Summary data={data[state]?.summary} sound={sounds[state]} />
+          < BusinessStats data={data[state]?.businessStats} />
+          < ConsumerStats data={data[state]?.consumerStats} />
+        </Container>
+      </>
     )
+  }
+  return <div>Loading...</div>
+
 }
 
 export default App
