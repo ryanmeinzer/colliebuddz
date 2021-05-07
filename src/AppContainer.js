@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AppContainer = (props) => {
 
-    const [state, setState] = useState(0)
+    // const [state, setState] = useState(0)
     const classes = useStyles()
 
     return (
@@ -28,14 +28,14 @@ const AppContainer = (props) => {
             <div className={classes.root}>
                 <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
                     {props.data.map((strain, index) =>
-                        <Button key={`${strain}-${index}`} onClick={() => setState(index)}>{strain.summary.name}</Button>
+                        <Button key={`${strain}-${index}`} onClick={() => props.onNavChange(index)}>{strain.summary.name}</Button>
                     )}
                 </ButtonGroup>
             </div>
             <Container align='center'>
-                < Summary data={props.data[state]?.summary} sound={props.sounds[state]} state={state} />
-                < BusinessStats data={props.data[state]?.businessStats} />
-                < ConsumerStats data={props.data[state]?.consumerStats} />
+                < Summary data={props.data[props.state]?.summary} sound={props.sounds[props.state]} state={props.state} />
+                < BusinessStats data={props.data[props.state]?.businessStats} />
+                < ConsumerStats data={props.data[props.state]?.consumerStats} />
             </Container>
         </>
     )
