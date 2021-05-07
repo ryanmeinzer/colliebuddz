@@ -12,8 +12,7 @@ function App() {
     const sounds = [ComeAround, BlindToYou, LetMeKnow]
 
     useEffect(() => {
-        fetch('/data.json')
-        // fetch('https://my-json-server.typicode.com/ryanmeinzer/colliebuddz/db')
+        fetch('https://my-json-server.typicode.com/ryanmeinzer/colliebuddz/db')
             .then(response => response.json())
             .then(json => setData(json.data))
             .finally(setIsLoading(false))
