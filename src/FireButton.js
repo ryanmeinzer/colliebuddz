@@ -38,7 +38,7 @@ const FireButton = (props) => {
 
     const Play = ({play}) => {
         return (
-            <Button onClick={() => play()} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
+            <Button onClick={() => {alert('Blazing music for this strain will now play - Enjoy!'); play()}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
                 <WhatshotIcon style={{fontSize: '2.5rem'}} />
             </Button>
         )
