@@ -33,7 +33,6 @@ const AppContainer = (props) => {
                 </ButtonGroup>
             </div>
             <Container align='center'>
-                <div>Hi</div>
                 < Summary data={props.data[props.state]?.summary} sound={props.sounds[props.state]} state={props.state} />
                 < BusinessStats data={props.data[props.state]?.businessStats} />
                 < ConsumerStats data={props.data[props.state]?.consumerStats} />
