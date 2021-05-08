@@ -43,7 +43,10 @@ const Summary = (props) => {
     }
 
     const handleLearnMoreClick = () => {
-        window.open(`https://www.leafly.com/strains/${props.data.name.replace(/'/, '').replace(/\s+/g, "-").toLowerCase()}`, "_blank")
+        const confirmed = window.confirm('You will be redirected to learn more about this strain on Leafly.com')
+        if (confirmed) {
+            window.open(`https://www.leafly.com/strains/${props.data.name.replace(/'/, '').replace(/\s+/g, "-").toLowerCase()}`, "_blank")
+        }
     }
 
     return (
