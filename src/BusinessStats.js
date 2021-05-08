@@ -45,11 +45,6 @@ const BusinessStats = (props) => {
                 </CardContent>
             </Card>
         </>
-        // <div>
-        //     <div>Growing Difficulty: {props.data.difficulty}</div>
-        //     <div>Yield: {props.data.yield}</div>
-        //     <div>Flowering: {props.data.flowering}</div>
-        // </div>
     )
 }
 

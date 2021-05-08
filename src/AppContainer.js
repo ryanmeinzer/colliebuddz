@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
 
 const AppContainer = (props) => {
 
-    // const [state, setState] = useState(0)
     const classes = useStyles()
 
     return (
