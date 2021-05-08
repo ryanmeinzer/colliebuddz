@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Glow Fire Button */
+.liteFire {
+  animation: fireLit 5000ms infinite;
+}
+
+@keyframes fireLit {
+  0% { text-shadow: 0 0 -10px red; }
+  100% { text-shadow: 0 0 40px red; }
+}
