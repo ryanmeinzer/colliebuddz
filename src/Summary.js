@@ -27,13 +27,11 @@ const Summary = (props) => {
 
     const [open, setOpen] = useState(false)
 
-    console.log(window.location)
-
     const handleShareClick = () => {
         setOpen(true)
-        props.state === 0 ? navigator.clipboard.writeText(window.location.origin + "/blue-dream")
-        : props.state === 1 ? navigator.clipboard.writeText(window.location.origin + "/gods-gift")
-        : navigator.clipboard.writeText(window.location.origin + "/grandaddy-purple")
+        props.state === 0 ? navigator.clipboard.writeText("https://colliebuddz.netlify.app/blue-dream")
+        : props.state === 1 ? navigator.clipboard.writeText("https://colliebuddz.netlify.app/gods-gift")
+        : navigator.clipboard.writeText("https://colliebuddz.netlify.app/grandaddy-purple")
     }
 
     const handleClose = (event, reason) => {
