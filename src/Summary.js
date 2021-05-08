@@ -23,13 +23,17 @@ const useStyles = makeStyles({
 })
 
 const Summary = (props) => {
-    const classes = useStyles();
+    const classes = useStyles()
 
     const [open, setOpen] = useState(false)
 
+    console.log(window.location)
+
     const handleShareClick = () => {
         setOpen(true)
-        navigator.clipboard.writeText(window.location.href)
+        props.state === 0 ? navigator.clipboard.writeText(window.location.origin + "/blue-dream")
+        : props.state === 1 ? navigator.clipboard.writeText(window.location.origin + "/gods-gift")
+        : navigator.clipboard.writeText(window.location.origin + "/grandaddy-purple")
     }
 
     const handleClose = (event, reason) => {

@@ -4,7 +4,6 @@ import ComeAround from './sounds/ComeAround.m4a'
 import BlindToYou from './sounds/BlindToYou.m4a'
 import LetMeKnow from './sounds/LetMeKnow.m4a'
 import AppContainer from './AppContainer'
-// import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
 
@@ -24,11 +23,19 @@ function App() {
         setState(index)
     }
 
+    useEffect(() => {
+        if (window.location.pathname === '/blue-dream') {
+            setState(0)
+        } else if (window.location.pathname === '/gods-gift') {
+            setState(1)
+        } else if (window.location.pathname === '/grandaddy-purple') {
+            setState(2)
+        }
+    }, [])
+
     if (!isLoading) {
         return (
-            <>
-                <AppContainer data={DATA} sounds={sounds} state={state} onNavChange={navClickHandler} />
-            </>
+            <AppContainer data={DATA} sounds={sounds} state={state} onNavChange={navClickHandler} component={AppContainer} />
         )
     }
     return <div>Loading...</div>
