@@ -25,7 +25,7 @@
                     "value": 48
                 }
             ],
-            "sound": "./sounds/ComeAround.m4a"
+            "sound": "./sounds/ComeAround.mp3"
         },
         {
             "summary": {
@@ -52,7 +52,7 @@
                     "value": 44
                 }
             ],
-            "sound": "./sounds/BlindToYou.m4a"
+            "sound": "./sounds/BlindToYou.mp3"
         },
         {
             "summary": {
@@ -79,7 +79,7 @@
                     "value": 44
                 }
             ],
-            "sound": "./sounds/LetMeKnow.m4a"
+            "sound": "./sounds/LetMeKnow.mp3"
         }
     ]
 }
