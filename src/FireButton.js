@@ -24,7 +24,6 @@ const FireButton = (props) => {
     const [play, {stop, isPlaying}] = useSound(props.sound)
 
     useEffect(() => {
-    console.log(isPlaying)
        isPlaying && stop()
     }, [props.state])
 
@@ -39,7 +38,7 @@ const FireButton = (props) => {
 
     const Play = ({play}) => {
         return (
-            <Button onClick={() => {play(); alert('Blazing music for this strain is now playing - Enjoy!')}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
+            <Button onClick={() => play()} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
                 <WhatshotIcon style={{fontSize: '2.5rem'}} />
             </Button>
         )
