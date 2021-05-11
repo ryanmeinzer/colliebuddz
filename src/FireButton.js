@@ -1,7 +1,7 @@
 import WhatshotIcon from '@material-ui/icons/Whatshot'
 import useSound from 'use-sound';
 import Button from "@material-ui/core/Button"
-// import React, {useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -23,9 +23,10 @@ const FireButton = (props) => {
 
     const [play, {stop, isPlaying}] = useSound(props.sound)
 
-    // useEffect(() => {
-    //     return stop()
-    // }, [props.state, stop])
+    useEffect(() => {
+        isPlaying && stop()
+        console.log('somin is goin on')
+    }, [props.state])
 
     const Pause = ({stop}) => {
         const classes = useStyles()
