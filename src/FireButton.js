@@ -25,7 +25,7 @@ const FireButton = (props) => {
 
     useEffect(() => {
         stop()
-    }, [props.state, stop])
+    }, [props.sound, stop])
 
     const Pause = ({stop}) => {
         const classes = useStyles()
