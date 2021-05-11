@@ -24,12 +24,9 @@ const FireButton = (props) => {
     const [play, {stop, isPlaying}] = useSound(props.sound)
 
     useEffect(() => {
-        isPlaying && stop()
-        // console.log('inside:', isPlaying)
-        return !isPlaying
+        console.log('mounted')
+        return () => isPlaying && stop()
     }, [props.state])
-
-    // console.log('outside:', isPlaying)
 
     const Pause = ({stop}) => {
         const classes = useStyles()
@@ -40,9 +37,19 @@ const FireButton = (props) => {
         )
     }
 
+    // () => {alert('Blazing music for this strain will now play - Enjoy!'); play()}
+    
+    const handleAlert = () => {
+        alert('Blazing music for this strain will now play - Enjoy!')
+    }
+
+    const handlePlay = ({play}) => {
+        return play()
+    }
+
     const Play = ({play}) => {
         return (
-            <Button onClick={() => {alert('Blazing music for this strain will now play - Enjoy!'); play()}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
+            <Button onClick={() => {handleAlert(); handlePlay({play})}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
                 <WhatshotIcon style={{fontSize: '2.5rem'}} />
             </Button>
         )
