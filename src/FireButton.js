@@ -25,8 +25,11 @@ const FireButton = (props) => {
 
     useEffect(() => {
         isPlaying && stop()
-        console.log('somin is goin on')
+        // console.log('inside:', isPlaying)
+        return !isPlaying
     }, [props.state])
+
+    // console.log('outside:', isPlaying)
 
     const Pause = ({stop}) => {
         const classes = useStyles()
