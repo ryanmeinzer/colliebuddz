@@ -1,7 +1,7 @@
 import WhatshotIcon from '@material-ui/icons/Whatshot'
 import useSound from 'use-sound';
 import Button from "@material-ui/core/Button"
-import React, {useEffect} from 'react'
+// import React, {useEffect} from 'react'
 import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -23,10 +23,9 @@ const FireButton = (props) => {
 
     const [play, {stop, isPlaying}] = useSound(props.sound)
 
-    useEffect(() => {
-        stop()
-        // return isPlaying
-    }, [props.state, stop])
+    // useEffect(() => {
+    //     return stop()
+    // }, [props.state, stop])
 
     const Pause = ({stop}) => {
         const classes = useStyles()
@@ -39,7 +38,7 @@ const FireButton = (props) => {
 
     const Play = ({play}) => {
         return (
-            <Button onClick={() => {alert('Blazing music for this strain will now play - Enjoy!'); play(); play()}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
+            <Button onClick={() => {alert('Blazing music for this strain will now play - Enjoy!'); play()}} aria-label="fire" variant="contained" style={{color: 'gray', borderRadius:'50%', height: '4rem', width: '4rem', margin: '1rem'}}>
                 <WhatshotIcon style={{fontSize: '2.5rem'}} />
             </Button>
         )
