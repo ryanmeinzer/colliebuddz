@@ -29,33 +29,6 @@
         },
         {
             "summary": {
-                "name": "God's Gift",
-                "image": "https://images.leafly.com/flower-images/og-kush.png?auto=compress,format&w=343&dpr=2",
-                "description": "No matter what your belief system, this strain is a 'gift' with its dreamy, blissful effects."
-            },
-            "businessStats": {
-                "difficulty": "Easy",
-                "yield": "3-6 (Oz/Ft)²",
-                "flowering": "7-9 Weeks"
-            },
-            "consumerStats": [
-                {
-                    "name": "Relaxed",
-                    "value": 62
-                },
-                {
-                    "name": "Happy",
-                    "value": 51
-                },
-                {
-                    "name": "Euphoric",
-                    "value": 44
-                }
-            ],
-            "sound": "./sounds/BlindToYou.mp3"
-        },
-        {
-            "summary": {
                 "name": "Granddaddy Purple",
                 "image": "https://images.leafly.com/flower-images/granddaddy-purple.png?auto=compress,format&w=343&dpr=2",
                 "description": "GDP enjoys solid consumer demand and is the matriarch of The Purps strain family, easily making it a Leafly legend of 420."
@@ -80,6 +53,33 @@
                 }
             ],
             "sound": "./sounds/LetMeKnow.mp3"
+        },
+        {
+            "summary": {
+                "name": "God's Gift",
+                "image": "https://images.leafly.com/flower-images/og-kush.png?auto=compress,format&w=343&dpr=2",
+                "description": "No matter what your belief system, this strain is a 'gift' with its dreamy, blissful effects."
+            },
+            "businessStats": {
+                "difficulty": "Easy",
+                "yield": "3-6 (Oz/Ft)²",
+                "flowering": "7-9 Weeks"
+            },
+            "consumerStats": [
+                {
+                    "name": "Relaxed",
+                    "value": 62
+                },
+                {
+                    "name": "Happy",
+                    "value": 51
+                },
+                {
+                    "name": "Euphoric",
+                    "value": 44
+                }
+            ],
+            "sound": "./sounds/BlindToYou.mp3"
         }
     ]
 }
