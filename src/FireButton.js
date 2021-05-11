@@ -24,7 +24,7 @@ const FireButton = (props) => {
     const [play, {stop, isPlaying}] = useSound(props.sound)
 
     useEffect(() => {
-        stop()
+        return stop()
     }, [props.sound, stop])
 
     const Pause = ({stop}) => {
