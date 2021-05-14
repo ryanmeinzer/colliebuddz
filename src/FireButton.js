@@ -14,7 +14,7 @@ const useStyles = makeStyles({
         animation: '$fireLit 5000ms infinite',
         },
         '@keyframes fireLit': {
-            'from': {boxShadow: '0 0 - 10px red'},
+            'from': {boxShadow: '0 0 -10px red'},
             'to': {boxShadow: '0 0 20px red'}
         }
 })

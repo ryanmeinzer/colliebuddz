@@ -35,7 +35,7 @@ function App() {
 
     if (!isLoading) {
         return (
-            <AppContainer data={DATA} sounds={sounds} state={state} onNavChange={navClickHandler} component={AppContainer} />
+            <AppContainer data={DATA} sounds={sounds} state={state} onNavChange={navClickHandler} />
         )
     }
     return <div>Loading...</div>
