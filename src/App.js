@@ -26,9 +26,9 @@ function App() {
     useEffect(() => {
         if (window.location.pathname === '/blue-dream') {
             setState(0)
-        } else if (window.location.pathname === '/gods-gift') {
-            setState(1)
         } else if (window.location.pathname === '/grandaddy-purple') {
+            setState(1)
+        } else if (window.location.pathname === '/gods-gift') {
             setState(2)
         }
     }, [])

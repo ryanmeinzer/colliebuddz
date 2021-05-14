@@ -30,8 +30,8 @@ const Summary = (props) => {
     const handleShareClick = () => {
         setOpen(true)
         props.state === 0 ? navigator.clipboard.writeText("https://colliebuddz.netlify.app/blue-dream")
-        : props.state === 1 ? navigator.clipboard.writeText("https://colliebuddz.netlify.app/gods-gift")
-        : navigator.clipboard.writeText("https://colliebuddz.netlify.app/grandaddy-purple")
+            : props.state === 1 ? navigator.clipboard.writeText("https://colliebuddz.netlify.app/grandaddy-purple")
+            : navigator.clipboard.writeText("https://colliebuddz.netlify.app/gods-gift")
     }
 
     const handleClose = (event, reason) => {
